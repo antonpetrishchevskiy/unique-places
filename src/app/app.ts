@@ -1,19 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-export interface Place {
-  id: number;
-  name: string;
-  image: string;
-  category: string;
-  city: string;
-  country: string;
-  rating: number;
-  price?: string;
-  tags?: string[];
-  description: string;
-  isExpanded?: boolean;
-}
+import { Place } from './models/place.model'; // ← импорт
 
 @Component({
   selector: 'app-root',
